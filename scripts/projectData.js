@@ -1,6 +1,6 @@
 'use strict';
 
-var allProjects = [
+var allProjectsData = [
   {
     title: 'About Me',
     projectUrl: 'https://ithalis.github.io/About-Me/',
