@@ -11,15 +11,19 @@ function Project(projectData){
   this.imgUrl = projectData.imgUrl;
 }
 
+//This functions concatenates the two properties to give a timeline of the project.
 Project.prototype.calculateTime = function(){
   var time = this.dateStarted + this.dateCompleted;
   return time;
 };
 
+//Puts all objects in array from the projectData.js
 allProjectsData.forEach(function(projectObject){
   projects.push(new Project(projectObject));
 });
 
+//Takes a template from the index.html, removes template class and clones it
+//Next step is to refactor for handlebars.js
 Project.prototype.toHtml = function(){
   var $newProject = $('div.template').clone().removeClass('template');
 

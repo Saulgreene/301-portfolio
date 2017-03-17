@@ -11,18 +11,29 @@
   <body>
     <section id="start">
       <h1>James Thomas</h1>
-      <nav>
-        <a href="#about" class="nav-links">About</a>
-        <a href="#project-overview" class="nav-links">Projects</a>
-        <a href="#connect" class="nav-links">Connect</a>
+      <nav class="main-nav">
+        <ul>
+          <li class="nav-links" data-content="about">About</li>
+          <li class="nav-links" data-content="project-overview">Projects</li>
+          <li class="nav-links" data-content="connect">Connect</li>
+        </ul>
       </nav>
 
     </section>
-    <section id="about">
+    <section id="about" class="content-sections">
       <h3>About Me</h3>
+      <p>I grew up most of my life in Fayetteville, Ga before heading off and joining the Navy, because why not, right? The Navy brought me all over but before long I was honorably discharged. Deciding to head to Seattle, Wa with my wife, I found a job at a Barnes & Noble for about a year and a half. Now, I'm attending CodeFellows in downtown Seattle and enjoying it immensely. Coding and web development seem to be my cup of tea and I get better at it everyday.</p>
+
+      <h6>Hobbies</h6>
+      <ul>
+        <li>Video games, especially RPGs</li>
+        <li>Coding</li>
+        <li>Rock climbing at the Seattle Bouldering Project</li>
+        <li>Listening to all kinds of music</li>
+      </ul>
 
     </section>
-    <section id="project-overview">
+    <section id="project-overview" class="content-sections">
       <h3>Projects</h3>
       <div class="template">
         <img src="" >
@@ -33,13 +44,14 @@
         </div>
       </div>
     </section>
-    <section id="connect">
+    <section id="connect" class="content-sections">
       <h3>Connect</h3>
       <a href="https://github.com/Ithalis">GitHub</a>
       <a href="https://www.linkedin.com/in/james-thomas-b4709a113/">LinkedIn</a>
     </section>
     <footer></footer>
 
+    <script type="text/javascript" src="scripts/appView.js"></script>
     <script type="text/javascript" src="scripts/projectData.js"></script>
     <script type="text/javascript" src="scripts/app.js"></script>
   </body>
