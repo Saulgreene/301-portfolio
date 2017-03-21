@@ -1,6 +1,55 @@
 body {
   background-color: #283b46;
 }
+a {
+  text-decoration: none !important;
+  color: white;
+}
+a:link {
+  text-decoration: none;
+  color: white;
+}
+a:visited {
+  text-decoration: none;
+  color: white;
+}
+a:active {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  text-decoration: none;
+  color: white;
+}
+a:focus {
+  text-decoration: none;
+  color: white;
+}
+a:-webkit-any-link {
+  text-decoration: none;
+  color: white;
+}
+button {
+  display: none;
+  float: right;
+  font-size: 40px;
+}
+@media only screen and (max-width: 500px) {
+  button {
+    display: inline-block;
+    margin-top: 40px;
+    float: right;
+  }
+  ul.main-nav {
+    display: none;
+  }
+  li.main-nav {
+    display: block;
+    float: none;
+    padding: 10px 10px 10px 10px;
+    z-index: 9999999;
+  }
+}
 
 h1 {
   font-size: 5em;

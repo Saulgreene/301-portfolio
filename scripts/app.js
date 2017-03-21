@@ -35,3 +35,10 @@ Project.prototype.toHtml = function(){
 projects.forEach(function(a){
   $('#project-overview').append(a.toHtml());
 });
+
+$('.hamburger').on('click', function() {
+  $('.main-nav').show();
+});
+$('.nav-links').on('click', function() {
+  $('.main-nav').fadeOut();
+});
