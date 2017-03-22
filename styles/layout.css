@@ -3,3 +3,17 @@
   width: 100%;
   border-bottom: 1px solid black;
 }
+
+.nav-links {
+  margin-left: 2em;
+  margin-right: 2em;
+  font-size: 1.5em;
+  text-decoration: none;
+  color: white;
+}
+
+.template {
+  background-color: black;
+  width: 30%;
+  height: 40em;
+}
