@@ -40,15 +40,6 @@ button {
     margin-top: 40px;
     float: right;
   }
-  ul.main-nav {
-    display: none;
-  }
-  li.main-nav {
-    display: block;
-    float: none;
-    padding: 10px 10px 10px 10px;
-    z-index: 9999999;
-  }
 }
 
 h1 {
@@ -60,23 +51,4 @@ h1 {
 nav {
   text-align: center;
   margin-top: -4em;
-}
-
-.nav-links {
-  margin-left: 2em;
-  margin-right: 2em;
-  font-size: 1.5em;
-  text-decoration: none;
-  color: white;
-}
-
-.template {
-  background-color: black;
-  width: 30%;
-  height: 40em;
-}
-
-.template img{
-  width: 100%;
-  height: 100%;
 }

@@ -1,0 +1,16 @@
+.template img{
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 500px) {
+  ul.main-nav {
+    display: none;
+  }
+  li.main-nav {
+    display: block;
+    float: none;
+    padding: 10px 10px 10px 10px;
+    z-index: 9999999;
+  }
+}
