@@ -1,6 +1,6 @@
 'use strict';
 
-var projects = [];
+var Project.all = [];
 
 function Project(projectData){
   this.title = projectData.title;
@@ -21,6 +21,18 @@ Project.prototype.toHtml = function(){
   return templateRender(this);
 };
 
-projects.forEach(function(a){
-  $('#project-overview').append(a.toHtml());
-});
+Project.loadAll = function(projectData) {
+  projectData.forEach(function(e){
+    Project.all.push(new Project(e));
+  })
+}
+
+Project.fetchAll = function() {
+  $.getJSON('data/projectData.json')
+  .then(function(data) {
+    Project.loadAll(data);
+    Project.all.forEach(function(a){
+      $('#project-overview').append(a.toHtml());
+    });
+  })
+}
