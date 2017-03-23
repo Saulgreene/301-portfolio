@@ -6,7 +6,16 @@
     <link rel="stylesheet" href="styles/layout.css">
     <title>James Thomas</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script id="project-template" type="text/x-handlebars-template">
+      <div data-category="{{category}}">
+        <img src="{{imgUrl}}">
+        <div class="info">
+          <a href="{{projectUrl}}"><h6 class="title">{{title}}</h6></a>
+          <p class="time">{{time}}</p>
+          <p class="description">{{description}}</p>
+        </div>
+      </div>
+    </script>
   </head>
   <body>
     <section id="start">
@@ -27,14 +36,7 @@
     </section>
     <section id="project-overview">
       <h3>Projects</h3>
-      <div class="template">
-        <img src="" >
-        <div class="info">
-          <a href="#"><h6 class="title"></h6></a>
-          <p class="time"></p>
-          <p class="description"></p>
-        </div>
-      </div>
+
     </section>
     <section id="connect">
       <h3>Connect</h3>
@@ -43,7 +45,10 @@
     </section>
     <footer></footer>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.min.js"></script>
     <script type="text/javascript" src="scripts/projectData.js"></script>
     <script type="text/javascript" src="scripts/app.js"></script>
+    <script type="text/javascript" src="scripts/appView.js"></script>
   </body>
 </html>
