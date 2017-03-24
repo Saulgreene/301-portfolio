@@ -1,7 +1,5 @@
 'use strict';
 
-var Project.all = [];
-
 function Project(projectData){
   this.title = projectData.title;
   this.projectUrl = projectData.projectUrl;
@@ -10,9 +8,7 @@ function Project(projectData){
   this.imgUrl = projectData.imgUrl;
 }
 
-allProjectsData.forEach(function(projectObject){
-  projects.push(new Project(projectObject));
-});
+Project.all = [];
 
 Project.prototype.toHtml = function(){
   var source = $('#project-template').html();
@@ -30,6 +26,7 @@ Project.loadAll = function(projectData) {
 Project.fetchAll = function() {
   $.getJSON('data/projectData.json')
   .then(function(data) {
+    console.log('The fecthAll function has gotten to callback.');
     Project.loadAll(data);
     Project.all.forEach(function(a){
       $('#project-overview').append(a.toHtml());
