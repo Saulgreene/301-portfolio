@@ -1,0 +1,32 @@
+{
+  "name": "301-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio project for CodeFellows 301 course.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ithalis/301-portfolio.git"
+  },
+  "keywords": [
+    "JamesThomas",
+    "James",
+    "Thomas",
+    "Node",
+    "JavaScript",
+    "ES6",
+    "JQuery",
+    "Postgres"
+  ],
+  "author": "James Thomas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Ithalis/301-portfolio/issues"
+  },
+  "homepage": "https://github.com/Ithalis/301-portfolio#readme",
+  "dependencies": {
+    "express": "^4.15.2"
+  }
+}
